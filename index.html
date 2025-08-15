@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Website startup modern, cepat, dan responsif untuk UMKM dan bisnis online">
+  <title>Startup Modern</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-50">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="#home" class="text-xl font-bold text-blue-600">My Startup</a>
+      <div class="space-x-4 hidden md:flex">
+        <a href="#home" class="hover:text-blue-600">Home</a>
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="pt-28 pb-16 bg-gradient-to-r from-blue-600 to-blue-400 text-white text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Solusi Website Modern</h1>
+    <p class="text-lg max-w-2xl mx-auto mb-6">Bantu bisnis Anda tampil profesional dengan website cepat, aman, dan gratis hosting di GitHub Pages.</p>
+    <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100">Hubungi Kami</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-white p-8 rounded-2xl shadow-md max-w-6xl mx-auto mt-8 reveal">
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <!-- Foto -->
+      <div class="flex justify-center">
+        <img src="foto-saya.png" alt="Foto Saya" 
+             class="rounded-full shadow-2xl max-w-[200px] opacity-0 transform translate-y-4 transition-all duration-700 ease-out reveal-img">
+      </div>
+
+      <!-- Teks -->
+      <div>
+        <h2 class="text-3xl font-semibold text-blue-700 mb-3">Tentang Kami</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Kami membantu UMKM & startup tampil profesional di internet dengan landing page yang cepat, aman, dan mudah dikelola.
+          Stack ringan: HTML + Tailwind + sedikit JavaScript. Hosting gratis di GitHub Pages.
+        </p>
+        <ul class="mt-4 space-y-2 list-disc pl-5 text-gray-700">
+          <li>Optimasi SEO dasar & Open Graph</li>
+          <li>Layout responsif untuk mobile & desktop</li>
+          <li>Form kontak ke Email & WhatsApp</li>
+          <li>Tanpa backend, biaya hosting = 0</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-4xl mx-auto mt-12 bg-white p-8 rounded-2xl shadow-md reveal">
+    <h2 class="text-3xl font-semibold text-blue-700 mb-6 text-center">Hubungi Kami</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
+      <input type="text" name="name" placeholder="Nama Anda" class="w-full p-3 border rounded-lg" required>
+      <input type="email" name="_replyto" placeholder="Email Anda" class="w-full p-3 border rounded-lg" required>
+      <textarea name="message" placeholder="Pesan Anda" rows="5" class="w-full p-3 border rounded-lg" required></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 w-full">Kirim</button>
+    </form>
+
+    <!-- Tombol WhatsApp -->
+    <div class="text-center mt-6">
+      <a href="https://wa.me/6282124643404" target="_blank" 
+         class="bg-green-500 text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-green-600 inline-block">
+        Chat via WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 text-sm py-6 mt-8">
+    © 2025 My Startup. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
